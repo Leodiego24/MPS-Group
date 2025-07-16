@@ -1,0 +1,22 @@
+Pclass
+Age
+SibSp
+Parch
+Fare
+FamilySize
+IsAlone
+Sex_encoded
+Embarked_C
+Embarked_Q
+Embarked_S
+Pclass_1
+Pclass_2
+Pclass_3
+AgeGroup_Child
+AgeGroup_Young Adult
+AgeGroup_Adult
+AgeGroup_Senior
+FareGroup_Low
+FareGroup_Medium
+FareGroup_High
+FareGroup_Very High
