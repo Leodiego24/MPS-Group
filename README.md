@@ -2,40 +2,6 @@
 
 A complete machine learning pipeline using AWS SageMaker, CDK infrastructure, and the Titanic dataset for survival prediction. This project demonstrates a production-ready ML workflow with automated data processing, model training, and deployment.
 
-## 🏗️ Architecture Overview
-
-```mermaid
-graph TB
-    A[1. CDK Infrastructure] --> B[S3 Buckets + IAM Roles]
-    B --> C[2. Upload Data & Code]
-    C --> D[3. Processing Job]
-    D --> E[4. Training Job]
-    E --> F[5. Model Registration]
-    F --> G[6. Endpoint Deployment]
-    
-    subgraph "S3 Storage"
-        H[Raw Data Bucket]
-        I[Processed Data Bucket]
-        J[Code Bucket]
-        K[Model Artifacts Bucket]
-    end
-    
-    subgraph "SageMaker Jobs"
-        L[Processing Job<br/>Data Preprocessing]
-        M[Training Job<br/>Model Training]
-        N[Model Registry<br/>Version Control]
-        O[Endpoint<br/>Real-time Inference]
-    end
-    
-    B -.-> H
-    B -.-> I
-    B -.-> J
-    B -.-> K
-    D -.-> L
-    E -.-> M
-    F -.-> N
-    G -.-> O
-```
 
 ## 📋 Prerequisites
 
